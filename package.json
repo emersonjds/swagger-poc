@@ -1,0 +1,26 @@
+{
+  "name": "swagger",
+  "version": "1.0.0",
+  "description": "Swagger Poc with Swagger Docs",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emersonjds/swagger-poc.git"
+  },
+  "keywords": [
+    "Swagger"
+  ],
+  "author": "Emerson Jr",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/emersonjds/swagger-poc/issues"
+  },
+  "homepage": "https://github.com/emersonjds/swagger-poc#readme"
+}
