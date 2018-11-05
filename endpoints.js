@@ -1,4 +1,10 @@
 const initializeEndpoints = (app) => {
+    /**
+     * @swagger: '2.0'
+     * /users:
+     *     get:
+     *       description: Return all users
+     */
     app.get('/users', (req, res) => {
         res.end('This should return all users')
     });
