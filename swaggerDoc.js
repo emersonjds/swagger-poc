@@ -2,20 +2,20 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerJsdoc = require('swagger-jsdoc');
 
 const options = {
-    swaggerDefinition: {
-        info: {
-            swagger: '2.0',
-            title: 'Test API',
-            version: '1.0.0',
-            description: 'Test Express Api with auto generate swagger doc'
-        },
-        basePath: '/'
+  swaggerDefinition: {
+    info: {
+      swagger: "2.0",
+      title: 'Test API',
+      version: '1.0.0',
+      description: 'Test Express Api with auto generate swagger doc'
     },
-    apis: ['enpoints.js']
+    basePath: '/',
+  },
+  apis: ['endpoints.js']
 }
 
 const specs = swaggerJsdoc(options)
 
 module.exports = (app) => {
-    app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs))
+  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs))
 }
